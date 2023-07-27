@@ -1,0 +1,303 @@
+body{
+  font-size: 16px;
+  background-color: #61122f ;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+/* HEADER */
+#header-nav{
+  background-color: #f6b619;
+}
+.navbar-brand{
+  padding-top: 20px;
+}
+.navbar-brand h1{
+font-family: 'Lora', serif;
+color: #557c3e;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: 0.75;
+}
+.navbar-brand p{
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.navbar-brand p span{
+  vertical-align: middle;
+}
+.navbar-nav a{ 
+  color: #951C49;
+  text-align: center;
+}
+.navbar-nav a:hover{
+  background: #E7E7E7;
+}
+.navbar-nav a span{
+  font-size: 1.8em;
+}
+#phone div{
+  color: #557c3e;
+  padding-right: 10px;
+}
+#phone-number{
+  color: #951C49;
+  font-size: 3.5vw;
+  text-decoration: none;
+}
+.navbar-toggler{
+  border-color: #61122f;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(97, 18, 47)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* FOOTER */
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #222;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #adress{
+  line-height: 2;
+}
+#hours > span, #adress > span{
+  font-size: 1.3em;
+}
+#adress p{
+  color: #557c3e;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+
+/* END FOOTER */
+
+
+/* HOME PAGE */
+#jumbotron{
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 1px solid #3f0c1f;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile{
+  background: url(/Images/menu-tile.jpeg) no-repeat;
+  background-position: center;
+
+}
+#specials-tile{
+  background: url(/Images/specials-tile.jpeg) no-repeat;
+  background-position: center;
+
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+
+}
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile{
+ position: relative;
+ border: 2px solid #3f0c1f;
+ overflow: hidden;
+ width: 200px;
+ height: 200px;
+ margin: 0 auto 15px;
+}
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.8;
+  color: #fff;
+}
+.category-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile .menu-item-price{
+  font-size: 1.1em;
+  text-align: right;
+}
+.menu-item-tile .menu-item-price span{
+  font-size: .6em;
+}
+.menu-item-photo div{
+width: 80px;
+background-color: #557c3e;
+overflow: hidden;
+}
+.menu-item-photo{
+  border: 2px solid #3f0c1f;
+  max-width: 250px;
+}
+.menu-item-details{
+  font-size: .9em;
+  font-style: italic;
+}
+
+/* MEDIA QUERIES */
+/* Extra large devices */
+@media (min-width: 1400px){
+  #jumbotron{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+}
+
+/*----- Large devices -----*/
+@media (min-width: 1200px){
+
+  #jumbotron{
+    background: url(/Images/jumbotron_1200.jpeg) no-repeat;
+    height: 675px;
+  }
+  #menu-tile, #specials-tile, #map-tile{
+    width: 360px;
+    margin: 0px auto 15px;
+
+  }
+
+}
+/*----- Medium devices ----- */
+@media (min-width: 992px) and (max-width: 1199px){
+
+  #logo-img{
+    background-image: url(/Images/restaurant-logo_medium.png);
+    width: 100px;
+    height: 100px;
+    margin: 5px 10px 5px 0;
+    vertical-align: middle;
+  }
+  .navbar-brand{
+    vertical-align: middle;
+  }
+  #jumbotron{
+    background: url(/Images/jumbotron_992.jpeg) no-repeat;
+    height: 558px;
+  }
+
+
+}
+/*----- small devices ----- */
+@media (min-width:768px) and (max-width:991px){
+  .navbar-nav a span{
+    font-size: 1.0em;
+  }
+  .navbar-brand h1{
+    font-size: 3.5vw;
+  }
+  #jumbotron{
+    background: url(/Images/jumbotron_768.jpeg) no-repeat;
+    height: 432px;
+
+  }
+
+}
+/*----- extra small devices ----- */
+@media (max-width: 767px){ 
+
+  .navbar-brand h1{ /*Restaurant name*/
+    padding-top: 10px;
+    font-size: 5vw; /*1vw = 1% of view port width */ 
+  }
+  .navbar-brand p{ /*Kosher cert*/
+     font-size: 0.6em;
+  }
+  .navbar-nav a span{
+    font-size: 1.2em;
+  }
+  /* .navbar-toggler{
+    padding: 4px;
+  } */
+  /* FOOTER */
+  .panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    margin-bottom: 0;
+  }
+  .panel-footer section hr{
+    width: 50%;
+  }
+  /* END FOOTER */
+  /* SINGLE CATEGORY PAGE */
+  .menu-item-photo{
+    margin: auto; 
+  }
+  .menu-item-tile .menu-item-price{
+    text-align: center;
+  }
+  .menu-item-description{
+    text-align: center;
+  }
+}
+@media (max-width: 576px){
+  #menu-tile, #specials-tile{
+    width: 360px;
+    margin: 0px auto 15px;
+  } 
+}
+/* Super extra small devices (iphone 4) */
+@media (max-width: 479px){
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  
+  #menu-tile, #specials-tile{
+    width: 280px;
+    margin: 0px auto 15px;
+
+  }
+  .navbar-brand h1{
+    font-size: 6vw;
+  }
+  #phone-number{
+    font-size: 18px;
+  }
+}
